@@ -38,8 +38,6 @@ foreach($emp as $v1){
 echo "</table>";
 
 
-
-
 echo "<Pre>";
 print_r($emp);
 echo "</Pre>";

@@ -9,5 +9,6 @@ if(in_array("mango",$food)){
     echo "can't Find. ";
 }
 
+echo array_search('apple',$food);
 
 ?>
