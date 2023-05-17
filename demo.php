@@ -1,28 +1,28 @@
-<!DOCTYPE html>
-<html lang="en">
+<?php
+if(isset($_FILES['image'])){
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
+    echo'<pre>';
+    print_r($_FILES);
+    echo'</pre>';
 
-<body>
-    <?php
-    echo "Hello world EveryOne ", "<br>";
+    //    echo $file_name = $_FILES['image']['name'];
+   $file_name = $_FILES['image']['name'];
+   $file_size = $_FILES['image']['size'];
+   $file_type = $_FILES['image']['type'];
+   $file_tmp = $_FILES['image']['tmp_name'];
 
-    echo "I am Abhishek", '<br>';
+//    move_uploaded_file($file_tmp,"image/".$file_name);
+    if(move_uploaded_file($file_tmp,"image/".$file_name)){
+        echo 'successfully uploaded.';
+    }else{
+        echo 'could not upload the file.';
+    };
 
-    echo "<b>Ara<b>", "<br>";
+    
+};
 
-    echo 2 + 3 ,"<br>";
 
-    echo 20- 10,"<br>";
 
-    print "Abhishek";
 
-    ?>
-</body>
 
-</html>
+?>
