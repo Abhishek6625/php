@@ -1,13 +1,21 @@
 <?php
-include "insert.php";
+include("reg.php");
 
 $id = $_GET['id'];
 
-$query = " DELETE FROM `crud` WHERE id =$id ";
+$query = " DELETE FROM students WHERE id = '$id' ";
 
-mysqli_query($conn,$query);
+$data =mysqli_query($conn, $query);
 
-header('location:display.php');
+if($data){
+    // echo "<script>window.alert('Deleted')</script>";
+    
+    header('location:display.php');
+
+}else{
+    echo "<script>window.alert('Not Delete')</script>";
+}
+
 
 
 ?>
