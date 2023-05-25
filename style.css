@@ -1,181 +1,588 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
-
-* {
-    margin: 0;
-    padding: 0;
+*{
+    margin: 0px;
+    padding: 0px;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+body,.max-width{
+    width: 1300px;
+    margin: auto;
+
+}
+/* header styled here  */
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    background: #1400ef91;
+}
+/* logo style here  */
+.logo{
+    margin-left: 20px;
+    
+}
+.logo span a{
+    color: white ;
+    padding: 5px;
+    /* font-family: fantasy; */
+    border-radius: 45%;
+    font-size: 20px;
+    border-style: double;
+    text-decoration: underline;
+
 }
 
-body {
-    height: 100vh;
-    padding: 10px;
-    background: linear-gradient(135deg, #71b7e6, #9b59b6);
+/* menu style here  */
+.menu{
+    margin-right: 20px;
+
 }
-h2{
+.menu ul li{
+    list-style: none;
+    text-transform: capitalize;
+    font-size: 18px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: inline-block;
+    line-height: 70px;
+}
+.menu ul li a{
+    color: white;
+    padding: 6px;
+    margin: 0px 5px;
+    transition: all 0.6s;
+}
+.menu ul li a:hover{
+    color: black;
+
+}
+
+/* banner section styled here  */
+.welcome{
+    width: 1300px;
+    color: white;
+    margin: auto;
+    position: absolute;
+    top: 130px;
+    font-size: 35px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-align: center;
-    margin: 10px 0px;
-
+    text-decoration: underline;
+    
 }
-main{
+
+/* Image of banner section style here */
+.banner img{
+    height: 100vh;
+    max-height: 600px;
+    width: 1300px;
+}
+/* left-banner styled here  */
+.wrapper{
+    position: absolute;
+    top: 200px;
+    width: 1300px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.leftbanner{
+    height: 400px;
+    width: 44%;
+    margin: auto;
+    padding: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.container {
-    max-width: 700px;
-    width: 100%;
-    background-color: #fff;
-    padding: 25px 30px;
-    border-radius: 5px;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+.leftbanner img{
+    height: 280px;
+    margin: auto;
+    text-align: center;
+    border-radius: 50%;
+    box-shadow: 0px 0px 5px 2px white;
 }
 
-.container .title {
-    font-size: 25px;
-    font-weight: 500;
-    position: relative;
+/* right .banner style here  */
+.rightbanner{
+    height: 400px;
+    width: 44%;
+    margin: auto;
+    padding: 20px;
+    
+}
+.rightbanner >div{
+    padding: 20px;
+    margin: 20px auto;
+}
+.rightbanner h1,h2{
+    text-transform: capitalize;
+    padding: 5px 10px;
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-.container .title::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    height: 3px;
-    width: 155px;
-    border-radius: 5px;
-    background: linear-gradient(135deg, #71b7e6, #9b59b6);
+.rightbanner h1{
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
-
-.content form .user-details {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin: 20px 0 12px 0;
+.rightbanner h2 span{
+    color: #7f05f1;
+    font-size: 24px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
-
-form .user-details .input-box {
-    margin-bottom: 15px;
-    width: calc(100% / 2 - 20px);
-}
-
-form .input-box span.details {
-    display: block;
-    font-weight: 500;
-    margin-bottom: 5px;
-}
-
-.user-details .input-box input {
-    height: 45px;
-    width: 100%;
-    outline: none;
-    font-size: 16px;
-    border-radius: 5px;
-    padding-left: 15px;
-    border: 1px solid #ccc;
-    border-bottom-width: 2px;
-    transition: all 0.3s ease;
-}
-
-.user-details .input-box input:focus,
-.user-details .input-box input:valid {
-    border-color: #9b59b6;
-}
-
-form .gender-details .gender-title {
+.rightbanner .btn{
+    border: 1px solid#1400ef91;
+    padding: 6px 20px;
+    color: white;
+    background: #1400ef91;
     font-size: 20px;
-    font-weight: 500;
+    border-radius: 8px;
+    margin-left: 20px;
+    margin-top: 10px;
+    transition: all 0.6s;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.rightbanner .btn:hover{
+    color: #db7979;
+    background: transparent;
+}
+/* About section style here  */
+
+.abouth1{
+    font-size: 35px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding:  20px auto;
+    margin-bottom: 0px;
+    color: black;
+    text-align: center;
+    margin: 10px auto;
 }
 
-form .category {
+.wrapperabout{
+    height: 400px;
+    width: 90%;
+    margin: auto;
     display: flex;
-    width: 80%;
-    margin: 14px 0;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
 }
 
-form .category label {
+.leftabout{
+    height: 400px;
+    width: 44%;
+    margin: auto;
+    padding: 20px;
+
+}
+.leftabout h2{
+    color: black;
+    font-size: 25px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-top: 10px;
+}
+.leftabout p{
+    color: black;
+    font-size: 18px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; 
+    padding: 10px;
+    margin-bottom: 12px;
+}
+.leftabout .cv{
+    border: 1px solid #1400ef91;
+    padding: 6px 20px;
+    color: white;
+    background: #1400ef91;
+    font-size: 20px;
+    border-radius: 10px;
+    margin-left: 10px;
+    margin-top: 20px;
+    transition: all 0.6s;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.leftabout .cv:hover{
+    background: transparent;
+    color: #db7979;
+}
+.rightabout{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    width: 44%;
+    margin: auto;
+    padding: 20px;
+}
+.rightabout img{
+    height: 360px;
+    margin: auto;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 2px 3px 6px 2px white;
+}
+/* .serviceswrapper styled here  */
+
+.serviceswrapper{
+    background: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.servicesh1{
+    margin: 0px auto;
+    margin-top: 20px;
+    padding: 10px 0px;
+    padding-top: 20px;
+    font-size: 35px;
+    color: rgb(255, 255, 255);
+    text-transform: capitalize;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background: black;
+}
+.part1,.part2,.part3{
+    height: 300px;
+    width: 30%;
+    margin: 0px 15px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* hover effect on div of services  */
+.divhover{
+    width: 100%;
+    margin: 0px 10px;
+    padding: 8px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 20px;
+    transition: all 0.6s;
+    background: rgb(41, 40, 40);
+    cursor: pointer;
+}
+.divhover:hover{
+    background:#1400ef91;
+    transform: scale(1.05);
+    color: white;
+
+}
+
+.divhover h2{
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 25px;
+    text-align: center;
+    text-transform: capitalize;
+
+}
+.divhover p{
+    color: white;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+    font-size: 18px;
+    text-align: center;
+}
+
+/* .serviceswrapper section ends here  */
+
+/* skill section start here  */
+.skillwrapper{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.skillh1{
+    font-size: 35px;
+    margin-top: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    text-transform: capitalize;
+    padding: 20px auto;
+    
+}
+.skillwrapper .leftskill ,.rightskill{
+    height: 360px;
+    width: 48%;
+    margin: 20px;
+
+}
+.leftskill{
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    flex-direction: column;
+    padding: 10px;
+}
+.leftskill h2{
+    color: black;
+    font-size: 25px;
+    padding: 5px 10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+}
+.leftskill p{
+    color: black;
+    font-size: 18px;
+    padding: 5px 10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+}
+.leftskill a{
+    display: inline-block;
+    font-size: 18px;
+    padding: 10px 20px;
+    margin: 10px;
+    width: 180px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-transform: capitalize;
+    background: #1400ef91;
+    color: white;
+    border-radius: 12px;
+    transition: all 0.6s;
+    border: 1px solid #1400ef91;
+    
+}
+.leftskill a:hover{
+    background: transparent;
+    color: #db7979;
+}
+.rightskill{
+    display: flex;
+    justify-content: center;
+    align-items:left;
+    flex-direction: column;
+}
+.rightskill li{
+    padding: 10px;
+    margin:  0px 20px;
+    border-bottom: 2px solid black;
+}
+.rightskill li a{
+    color:#1400ef91;
+    text-transform: capitalize;
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    transition: all 0.6s;
+}
+.rightskill li a:hover{
+    color: black;
+}
+/* skill section styled ends here  */
+
+/* community section styled starts here  */
+.comwrapper{
+    display: flex;
+    background: black;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px;
+
+}
+.comwrapperh1{
+    background: black;
+    font-size: 35px;
+    padding: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-transform: capitalize;
+    color: white;
+    text-align: center;
+}
+.comwrapper .item{
+    height: 300px;
+    width: 380px;
+    margin: 10px;
+    padding: 20px;
     display: flex;
     align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
     cursor: pointer;
+    background: rgb(41, 40, 40);
+    border-radius: 10px;
+    transition: all 0.6s;
 }
-
-form .category label .dot {
-    height: 18px;
-    width: 18px;
+.comwrapper .item img{
+    height: 150px;
     border-radius: 50%;
-    margin-right: 10px;
-    background: #d9d9d9;
-    border: 5px solid transparent;
-    transition: all 0.3s ease;
-}
+    border: 3px solid white;
 
-#dot-1:checked~.category label .one,
-#dot-2:checked~.category label .two,
-#dot-3:checked~.category label .three {
-    background: #9b59b6;
-    border-color: #d9d9d9;
 }
-
-form input[type="radio"] {
-    display: none;
+.comwrapper .item h2{
+    color: white;
+    font-size: 25px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
 }
-
-form .button {
-    height: 45px;
-    margin: 35px 0
-}
-
-form .button input {
-    height: 100%;
-    width: 100%;
-    border-radius: 5px;
-    border: none;
-    color: #fff;
+.comwrapper .item p{
+    color: white;
     font-size: 18px;
-    font-weight: 500;
-    letter-spacing: 1px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+
+}
+.comwrapper .item:hover{
+    transform: scale(1.05);
+    background: #1400ef91;
+}
+/* community sytled ends here  */
+
+/* contact styled starts here  */
+.contactwrapper{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+.contacth1{
+    font-size: 35px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    text-transform: capitalize;
+    color: black;
+    padding: 20px;
+    padding-bottom: 10px;
+}
+
+.contactwrapper .leftcontact ,.rightcontact{
+    height: 300px;
+    width: 500px;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+
+}
+.contactwrapper .leftcontact h2{
+    color: black;
+    font-size: 25px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 10px;
+    padding-bottom: 5px;
+
+}
+.contactwrapper .leftcontact p{
+    color: black;
+    font-size: 18px;
+    padding: 5px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+
+}
+.contactwrapper .leftcontact span{
+    color: black;
+    font-size: 16px;
+    padding: 5px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+/* right contact style here  */
+.contactwrapper .rightcontact h2{
+    color: black;
+    font-size: 25px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 5px;
+    padding-bottom: 8px;
+    
+}
+.contactwrapper .rightcontact{
+    padding: 0px;
+}
+.contactwrapper .rightcontact div{
+    padding: 5px;
+    display: flex;
+    justify-content: space-around;
+    align-items: left;
+
+}
+.contactwrapper .rightcontact div input,textarea{
+    font-size: 16px;
+    padding: 3px;
+    width: 300px;
+    
+
+}
+
+.contactwrapper .rightcontact div #send{
+    color: white;
+    background: #1400ef91;
+    border: 1px solid #1400ef91;
+    border-radius: 20px;
+    outline: none;
     cursor: pointer;
-    transition: all 0.3s ease;
-    background: linear-gradient(135deg, #71b7e6, #9b59b6);
+    transition: all 0.6s;
+
+}
+.contactwrapper .rightcontact div #send:hover{
+    background: transparent;
+    color: #db7979;
+
+}
+/* .rightcontact style ends here  */
+
+/* social icon designing here  */
+.socialwrapper{
+    width: 100%;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.socialh1{
+    background: #1400ef91;
+    text-align: center;
+    font-size: 28px;
+    margin-top: 20px;
+    padding: 8px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.socialwrapper .icon{
+    margin: 5px 50px;
+    transition: all 0.5s;
+    text-align: center;
+    text-transform: capitalize;
+    
+}
+.socialwrapper .icon img{
+    height: 80px;
+    border-radius: 50%;
+    
+}
+.socialwrapper .icon:hover{
+    transform: scale(1.08); 
 }
 
-form .button input:hover {
-    /* transform: scale(0.99); */
-    background: linear-gradient(-135deg, #71b7e6, #9b59b6);
+/* social icon designing here  */
+
+
+.footer{
+    width: 100%;
+    height: 60px;
+    background: black;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footer h3{
+    background: rgb(41, 40, 40);
+    color: white;
+}
+.footer h3 a,span{
+    color: #db7979;
+}
+.footer #top{
+    color: white;
+    font-size: 20px bold;
+    margin-right: 100px;
 }
 
-@media(max-width: 584px) {
-    h2{
-        display: none;
-    }
-    .container {
-        max-width: 100%;
-    }
 
-    form .user-details .input-box {
-        margin-bottom: 15px;
-        width: 100%;
-    }
-
-    form .category {
-        width: 100%;
-    }
-
-    .content form .user-details {
-        max-height: 300px;
-        overflow-y: scroll;
-    }
-
-    .user-details::-webkit-scrollbar {
-        width: 5px;
-    }
-}
-
-@media(max-width: 459px) {
-    .container .content .category {
-        flex-direction: column;
-    }
-}
