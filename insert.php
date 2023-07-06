@@ -1,8 +1,14 @@
 <?php
 
-$conn = mysqli_connect('localhost','root');
+$hostname = "localhost";
 
-mysqli_select_db($conn,'crud_db');
+$servername = "root";
+
+$serverpass = "";
+
+$databases = "crud_db";
+
+$conn = new mysqli($hostname, $servername, $serverpass, $databases);
 
 if($conn){
     // echo "connencted";
@@ -26,6 +32,3 @@ if(isset($_POST['login'])){
         echo "<script>window.alert('failed')</script>";
      }
 }
-
-
-?>
